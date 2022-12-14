@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>ActiveBox</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; utf-8">
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="img/favicons/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Описание страницы">
+	<meta name="keywords" content="Ключевые слова страницы">
+	<meta name="googlebot" content="notranslate">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="styles/styles.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+
+<!-- sprite -->
+
+<svg style="display: none;">
+	<symbol id="facebook" viewBox="0 0 24 24">
+		<g>
+			<path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"/>
+		</g>
+	</symbol>
+	<symbol id="twitter"  viewBox="0 0 24 24">
+		<g>
+			<path d="M22,3.999c-0.78,0.463-2.345,1.094-3.265,1.276c-0.027,0.007-0.049,0.016-0.075,0.023c-0.813-0.802-1.927-1.299-3.16-1.299c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.353,0-5.905-1.756-7.735-4c-0.199,0.5-0.286,1.29-0.286,2.032c0,1.401,1.095,2.777,2.8,3.63c-0.314,0.081-0.66,0.139-1.02,0.139c-0.581,0-1.196-0.153-1.759-0.617c0,0.017,0,0.033,0,0.051c0,1.958,2.078,3.291,3.926,3.662c-0.375,0.221-1.131,0.243-1.5,0.243c-0.26,0-1.18-0.119-1.426-0.165c0.514,1.605,2.368,2.507,4.135,2.539c-1.382,1.084-2.341,1.486-5.171,1.486H2C3.788,19.145,6.065,20,8.347,20C15.777,20,20,14.337,20,8.999c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08c-0.003-0.136-0.006-0.263-0.009-0.329c0.79-0.57,1.475-1.281,2.017-2.091c-0.725,0.322-1.503,0.538-2.32,0.636C20.514,6.135,21.699,4.943,22,3.999z"/>
+		</g>
+	</symbol>
+	<symbol id="linkedin" viewBox="0 0 30 30">
+		<g>
+			<path d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"/>
+		</g>
+	</symbol>
+</svg>
+
+
+<!-- header -->
+
+<header class="header" id="header">
+	<div class="container">
+		<div class="header__inner">
+			<div class="header__logo">
+				<img src="img/logo_ActiveBox.png" alt="">
+			</div>
+			<nav class="nav" id="nav">
+				<a href="#" class="nav__link" data-scroll="#features">Features</a>
+				<a href="#" class="nav__link" data-scroll="#works">Works</a>
+				<a href="#" class="nav__link" data-scroll="#team">Our Team</a>
+				<a href="#" class="nav__link" data-scroll="#testimonials">Testimonials</a>
+				<a href="#" class="nav__link" data-scroll="#download">Download</a>
+			</nav>
+
+			<button class="burger" type="button" id="navToggle">
+				<span class="burger__item">Menu</span>
+			</button>
+		</div>
+	</div>
+</header><!-- /. header -->
+
+
+<!-- intro -->
+
+<div class="intro" id="intro">
+	<div class="container">
+		<div class="intro__inner">
+			<h1 class="intro__title">Your Favorite One Page Multi Purpose Template</h1>
+			<h2 class="intro__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur beatae temporibus nostrum veritatis culpa ipsum. Vitae doloremque error tempore quasi sapiente delectus, qui non similique repellat animi ullam rem distinctio!</h2>
+			<a href="#" class="btn btn_red">Find Out More</a>
+		</div>
+	</div>
+</div><!-- /. intro -->
+
+
+<!-- features -->
+
+<div class="container" id="features">
+	<div class="features">
+		<div class="features__item">
+			<img class="features__icon" src="img/features/feature-01.png" alt="">
+			<h4 class="features__title">Easily Customised</h4>
+			<div class="features__text"> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor
+			</div>
+		</div>
+		<div class="features__item">
+			<img class="features__icon" src="img/features/feature-02.png" alt="">
+			<h4 class="features__title">Responsive REady</h4>
+			<div class="features__text"> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor
+			</div>
+		</div>
+		<div class="features__item">
+			<img class="features__icon" src="img/features/feature-03.png" alt="">
+			<h4 class="features__title">Modern Design</h4>
+			<div class="features__text"> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor
+			</div>
+		</div>
+		<div class="features__item">
+			<img class="features__icon" src="img/features/feature-04.png" alt="">
+			<h4 class="features__title">Clean Code</h4>
+			<div class="features__text"> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor
+			</div>
+		</div>
+		<div class="features__item">
+			<img class="features__icon" src="img/features/feature-05.png" alt="">
+			<h4 class="features__title">Ready to Ship</h4>
+			<div class="features__text"> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor
+			</div>
+		</div>
+		<div class="features__item">
+			<img class="features__icon" src="img/features/feature-06.png" alt="">
+			<h4 class="features__title">Download for Free</h4>
+			<div class="features__text"> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor
+			</div>
+		</div>
+	</div><!-- /. features -->
+</div> <!-- /. container -->
+
+
+<!-- works -->
+
+<div class="works" id="works">
+	<div class="works__item">
+		<img class="works__photo" src="img/works/work-1.jpg" alt="">
+		<div class="works__content">
+			<div class="works__title">
+				Project Name
+			</div>
+			<div class="works__text">
+				User Interface Design
+			</div>
+		</div>
+	</div>
+	<div class="works__item">
+		<img class="works__photo" src="img/works/work-2.jpg" alt="">
+		<div class="works__content">
+			<div class="works__title">
+				Project Name
+			</div>
+			<div class="works__text">
+				User Interface Design
+			</div>
+		</div>
+	</div>
+	<div class="works__item">
+		<img class="works__photo" src="img/works/work-3.jpg" alt="">
+		<div class="works__content">
+			<div class="works__title">
+				Project Name
+			</div>
+			<div class="works__text">
+				User Interface Design
+			</div>
+		</div>
+	</div>
+	<div class="works__item">
+		<img class="works__photo" src="img/works/work-4.jpg" alt="">
+		<div class="works__content">
+			<div class="works__title">
+				Project Name
+			</div>
+			<div class="works__text">
+				User Interface Design
+			</div>
+		</div>
+	</div>
+	<div class="works__item">
+		<img class="works__photo" src="img/works/work-5.jpg" alt="">
+		<div class="works__content">
+			<div class="works__title">
+				Project Name
+			</div>
+			<div class="works__text">
+				User Interface Design
+			</div>
+		</div>
+	</div>
+	<div class="works__item">
+		<img class="works__photo" src="img/works/work-6.jpg" alt="">
+		<div class="works__content">
+			<div class="works__title">
+				Project Name
+			</div>
+			<div class="works__text">
+				User Interface Design
+			</div>
+		</div>
+	</div>
+	<div class="works__item">
+		<img class="works__photo" src="img/works/work-7.jpg" alt="">
+		<div class="works__content">
+			<div class="works__title">
+				Project Name
+			</div>
+			<div class="works__text">
+				User Interface Design
+			</div>
+		</div>
+	</div>
+	<div class="works__item">
+		<img class="works__photo" src="img/works/work-8.jpg" alt="">
+		<div class="works__content">
+			<div class="works__title">
+				Project Name
+			</div>
+			<div class="works__text">
+				User Interface Design
+			</div>
+		</div>
+	</div>
+</div><!--  /. works -->
+
+
+<!-- team -->
+
+<div class="team" id="team">
+	<div class="container">
+		<div class="team__inner">
+			<div class="team__item">
+				<img class="team__photo" src="img/teams/team-1.jpg" alt="">
+				<div class="team__name">
+					Ruth Woods
+				</div>
+				<div class="team__prof">
+					Founder, CEO
+				</div>
+				<div class="team__text">
+					<p>
+						Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+					</p>
+					<p>
+						Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+					</p>
+				</div>
+				<div class="social">
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social_icon">
+							<use xlink:href="#facebook"></use>
+						</svg>
+					</a>
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social_icon">
+							<use xlink:href="#twitter"></use>
+						</svg>
+					</a>
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social_icon">
+							<use xlink:href="#linkedin"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="team__item">
+				<img class="team__photo" src="img/teams/team-2.jpg" alt="">
+				<div class="team__name">
+					Timothy Reed
+				</div>
+				<div class="team__prof">
+					Co-Founder, Developer
+				</div>
+				<div class="team__text">
+					<p>
+						Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+					</p>
+					<p>
+						Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+					</p>
+				</div>
+				<div class="social">
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social_icon">
+							<use xlink:href="#facebook"></use>
+						</svg>
+					</a>
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social_icon">
+							<use xlink:href="#twitter"></use>
+						</svg>
+					</a>
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social_icon">
+							<use xlink:href="#linkedin"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="team__item">
+				<img class="team__photo" src="img/teams/team-3.jpg" alt="">
+				<div class="team__name">
+					Victoria Valdez
+				</div>
+				<div class="team__prof">
+					UI Designer
+				</div>
+				<div class="team__text">
+					<p>
+						Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+					</p>
+					<p>
+						Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+					</p>
+				</div>
+				<div class="social">
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social_icon">
+							<use xlink:href="#facebook"></use>
+						</svg>
+					</a>
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social_icon">
+							<use xlink:href="#twitter"></use>
+						</svg>
+					</a>
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social_icon">
+							<use xlink:href="#linkedin"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="team__item">
+				<img class="team__photo" src="img/teams/team-4.jpg" alt="">
+				<div class="team__name">
+					Beverly Little
+				</div>
+				<div class="team__prof">
+					Data Scientist
+				</div>
+				<div class="team__text">
+					<p>
+						Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+					</p>
+					<p>
+						Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+					</p>
+				</div>
+				<div class="social">
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social_icon">
+							<use xlink:href="#facebook"></use>
+						</svg>
+					</a>
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social_icon">
+							<use xlink:href="#twitter"></use>
+						</svg>
+					</a>
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social_icon">
+							<use xlink:href="#linkedin"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div><!-- /. team__inner -->
+	</div><!-- /. container -->
+</div><!-- /. team -->
+
+
+<!-- testimonials -->
+<div class="testimonials" id="testimonials">
+	<div class="container">
+		<div class="testimonials__slider" id="testimonialsSlider">
+			<div>
+				<div class="testimonials__item">
+					<div class="testimonials__photo">
+						<img class="testimonials__img" src="img/testimonials/testimonial-1.jpg" alt="">
+					</div>
+					<div class="testimonials__content">
+						<div class="testimonials__text">
+							"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...''
+						</div>
+						<div class="testimonials__autor">
+							Susan Sims, Interaction Designer at XYZ.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="testimonials__item">
+					<div class="testimonials__photo">
+						<img class="testimonials__img" src="img/testimonials/testimonial-1.jpg" alt="">
+					</div>
+					<div class="testimonials__content">
+						<div class="testimonials__text">
+							"Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+						</div>
+						<div class="testimonials__autor">
+							Susan Sims, Interaction Designer at XYZ.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="testimonials__item">
+					<div class="testimonials__photo">
+						<img class="testimonials__img" src="img/testimonials/testimonial-1.jpg" alt="">
+					</div>
+					<div class="testimonials__content">
+						<div class="testimonials__text">
+							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam turpis turpis, lobortis sed arcu ut, consectetur ornare est. Nunc ut urna felis. Sed sem nunc, porta non nisi eget, pharetra dignissim lectus.''
+						</div>
+						<div class="testimonials__autor">
+							Susan Sims, Interaction Designer at XYZ.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /. container -->
+</div><!-- /. testimonials -->
+
+
+<!-- download -->
+<div class="download" id="download">
+	<div class="container">
+		<h3 class="download__title">
+			Are You Ready to Start? Download Now For Free!
+		</h3>
+		<div class="download__text">
+			<p>
+				Fusce dapibus, tellus ac cursus commodo
+			</p>
+		</div>
+		<a class="btn btn_red btn_long" href="#">Download Here</a>
+	</div><!-- /. container -->
+</div><!-- /. download -->
+
+
+<!-- footer -->
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__block">
+				<h4 class="footer__title">Location</h4>
+				<address class="footer__address">
+					<div>3481 Melrose Place</div>
+					<div>Beverly Hills, CA 90210</div>
+				</address>
+			</div>
+			<div class="footer__block">
+				<h4 class="footer__title">Share with Love</h4>
+				<div class="social social_footer">
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social_icon">
+							<use xlink:href="#facebook"></use>
+						</svg>
+					</a>
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social_icon">
+							<use xlink:href="#twitter"></use>
+						</svg>
+					</a>
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social_icon">
+							<use xlink:href="#linkedin"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="footer__block">
+				<h4 class="footer__title">About ActiveBox</h4>
+				<div class="footer__text">
+					<p>
+						Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.
+					</p>
+				</div>
+			</div>
+		</div><!-- /. footer__inner -->
+	</div><!-- /. container -->
+	<div class="copyright">
+		<div class="container">
+			<div class="copyright__text">
+				<div>
+					Copyright &copy; 2015 ActiveBox. All Rights Reserved
+				</div>
+				<div>
+					Made <span>by Kamal Chaneman</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer><!-- /. footer -->
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
